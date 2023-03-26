@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cloverdays单词本1</title>
+</head>
+<style>
+li.tooltip {
+    position: relative;
+    width: 2em;
+    list-style-type: decimal;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 50em;
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top:-5px;
+    left: 150%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgb(255, 56, 89) transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.example_text{
+    padding-left: 4em;
+    display: block;
+}
+
+.word{
+    margin-top: 1em;
+    color: rgb(40, 166, 212);
+    font-size: larger;
+}
+
+body{
+    background-color: rgb(189, 255, 214);
+}
+</style>
+<body>
+
+<div class="word">
+    まんざら　満更　◎
+</div>
+<ol><li class="tooltip">意义
+    <span class="tooltiptext">【副词】（后接否定）并不是完全不（行）的<br/>
+        「まんざらでもない」とは、「全然だめだというわけではない。 むしろかなり良い」
+        という意味です。 相手からの好意に対して、表向きは不服そうに装いつつも、内心喜んでいる様子を表します。</span></li>
+<li class="example">例句<br/></li>
+    <span class="example_text">杏璃はまんざらでもない態度で頷き、ヘキルと握手した。賢者ちょろ助誕生の瞬間である。</span>
+    <span class="example_text">まんざら捨てたものでもない。</span> 
+    <span class="example_text">まんざらいやでもないらしい。</span>
+    <span class="example_text">まんざら知らない仲でもない。</span>
+</ol>
+
+<div class="word">
+    まんざら　満更2
+</div>
+<ol><li class="tooltip"> 读音 
+  <span class="tooltiptext">提示文本</span></li>
+<li class="tooltip">意义
+    <span class="tooltiptext">示文本</span></li>
+<li class="example">例句<br/>
+    <span class="example_text">似懂非懂是发</span></li>
+</ol>
+
+</body>
+</html>
