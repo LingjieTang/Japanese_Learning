@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cloverdays单词本1</title>
+</head>
+<style>
+li.tooltip {
+    position: relative;
+    width: 2em;
+    list-style-type: decimal;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 50em;
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top:-5px;
+    left: 150%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgb(255, 56, 89) transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.example_text{
+    padding-left: 4em;
+    display: block;
+}
+
+.word{
+    margin-top: 1em;
+    color: rgb(40, 166, 212);
+    font-size: larger;
+}
+
+body{
+    background-color: rgb(189, 255, 214);
+}
+</style>
+<body>
+
+<div class="word">
+    プロローグ　③
+</div>
+<ol><li class="tooltip">意义
+    <span class="tooltiptext">【英】prologue ;序，序言；序幕<br/>
+        </span></li>
+
+</ol>
+
+<div class="word">
+    エピローグ ③
+</div>
+<ol><li class="tooltip">意义
+    <span class="tooltiptext">【英】epilogue ;尾声，后记<br/>
+        </span></li>
+</ol>
+
+<div class="word">
+    余熱 ◎ 
+</div>
+<ol><li class="tooltip"> 读音 
+    <span class="tooltiptext">[よねつ]</span></li>
+    <li class="tooltip">意义
+    <span class="tooltiptext">【名词】余热<br/>
+        </span></li>
+<li class="example">例句<br/></li>
+    <span class="example_text">杏璃はまんざらでもない態度で頷き、ヘキルと握手した。賢者ちょろ助誕生の瞬間である。</span>
+    <span class="example_text">まんざら捨てたものでもない。</span> 
+    <span class="example_text">まんざらいやでもないらしい。</span>
+    <span class="example_text">まんざら知らない仲でもない。</span>
+</ol>
+
+</body>
+</html>
